@@ -94,3 +94,4 @@ public class ContractEntity {
         this.status = status;
     }
 }
+
