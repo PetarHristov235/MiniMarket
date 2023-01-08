@@ -102,6 +102,4 @@ public class ContractServiceImpl implements ContractService {
                 contractEntity.getUserEntity().getUsername(), contractEntity.getBuyerId(), buyerUsername,
                 contractEntity.getItemEntity().getId(), contractEntity.getPrice(), contractEntity.getStatus());
     }
-
-
 }

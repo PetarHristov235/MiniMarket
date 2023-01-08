@@ -35,6 +35,4 @@ public class UserRestController {
         final int id = Integer.parseInt(userId);
         return userService.getUserById(id);
     }
-
-
 }

@@ -29,7 +29,6 @@ public class ContractRestController {
         this.itemsService=itemsService;
     }
 
-
     @GetMapping("/contracts")
     public List<ContractDTO> findingAllContracts() {
         return contractService.findingAllContracts();
@@ -67,5 +66,4 @@ public class ContractRestController {
     public void deleteContractById(@PathVariable final int id){
         contractService.deleteContractById(id);
     }
-
 }

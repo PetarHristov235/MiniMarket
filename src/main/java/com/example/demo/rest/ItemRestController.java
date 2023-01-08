@@ -21,7 +21,6 @@ public class ItemRestController {
     @Autowired
     public ItemRestController(final ItemsService itemsService) {
         this.itemsService = itemsService;
-
     }
 
     @GetMapping("/items")

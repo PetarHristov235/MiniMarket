@@ -32,14 +32,10 @@ public class ClosingContractServiceImpl implements ClosingContractService {
         final UserEntity sellerUser = contractEntity.getUserEntity();
         if (sellerUser.getId() != buyerId) {
             final UserEntity buyerUser = userExistingChecker(buyerId);
-
             final BigDecimal itemPrice = contractEntity.getPrice();
-
             final BigDecimal currencyValue = currencyConverter.getCurrencyValue(sellerUser.getCurrency(),
                     buyerUser.getCurrency());
-
             final BigDecimal itemPriceInBuyerCurrency = currencyValue.multiply(itemPrice);
-
             if( buyerUser.getAccount().compareTo(itemPriceInBuyerCurrency)>=0){
                 final BigDecimal  buyerAccountAfterDeal = buyerUser.getAccount().subtract(itemPriceInBuyerCurrency);
                 final BigDecimal sellerAccountAfterDeal = sellerUser.getAccount().add(itemPrice);

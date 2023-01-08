@@ -23,13 +23,14 @@ public class UserEntity {
     @Column(name = "account")
     private BigDecimal account;
 
-    @Column(name="currency")
+    @Column(name = "currency")
     private String currency;
-    public UserEntity(final int id, final String username, final BigDecimal account, String currency) {
+
+    public UserEntity(final int id, final String username, final BigDecimal account, final String currency) {
         this.id = id;
         this.username = username;
         this.account = account;
-        this.currency=currency;
+        this.currency = currency;
     }
 
     public UserEntity() {
@@ -66,8 +67,4 @@ public class UserEntity {
     public void setAccount(final BigDecimal account) {
         this.account = account;
     }
-
-    //    public List<ItemRepository> getItemsEntityList() {
-    //        return itemsEntityList;
-    //    }
 }
