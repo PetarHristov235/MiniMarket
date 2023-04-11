@@ -1,10 +1,3 @@
-Use Spring Boot Framework to build REST API with Gradle/Maven and connect it to a relational DB. We want to see your knowledge about REST, OOP, and SQL skills. Please use projections appropriately when interacting with the DB. Please avoid query creation from method names so you can demonstrate your SQL skills and ability to write native and JPQL/HQL queries. 
-
-Write a few unit tests. Do not bother with the security or differentiation of users at that point.
-
-Upload project to GitHub/GitLab.
-
-
 The Market
 
 The system must operate as a simplified market where users can be buyers or sellers.
@@ -116,4 +109,3 @@ EUR/USD rate is 1.2
 "User1" creates a contract to sell "Item1" for USD 60
 "User2" has EUR in her account and pays EUR 50 
 "User1" receives USD 60 in his account.
-Use Swagger for documentation
